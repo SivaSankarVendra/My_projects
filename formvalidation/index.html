@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form for the tournment</title>
+    <link rel="shortcut icon" href="Game.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="head">Register Of The Tournment</div>
+      <div class="container">
+        <form>
+          <div class="mb-2" id="fullname">
+            <label for="fullname" class="form-label">Full Name</label> <b><span class="errornote"> </span></b>
+            <input type="text" class="form-control" id="Inputfullname" required />
+          </div>
+          <div class="mb-2" id="Email">
+            <label for="InputEmail" class="form-label">Email address</label>  <b><span class="errornote"> </span></b>
+            <input
+              type="email"
+              class="form-control"
+              id="InputEmail"
+              required/>
+          </div>
+          <div class="mb-2" id="phone">
+            <label for="phone" class="form-label">Phone Number</label>  <b><span class="errornote"></span></b>
+            <input type="tel" class="form-control" id="Inputphone" required />
+          </div>
+          <div class="mb-2" id="Password">
+            <label for="InputPassword" class="form-label">Password</label>  <b><span class="errornote"></span></b>
+            <input
+              type="password"
+              class="form-control"
+              id="InputPassword"
+              required/>
+          </div>
+          <div class="mb-3" id="Password2">
+            <label for="InputPassword2" class="form-label" >Confirm Password</label>  <b><span class="errornote"></span></b>
+            <input
+              type="password"
+              class="form-control"
+              id="InputPassword2"
+              required/>
+          </div>
+          <div class="mb-2 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="showPassword"
+            />
+            <label class="form-check-label" for="showPassword">Show Password</label>
+          </div>
+          <div class="mb-2 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="Check"
+              required/>
+            <label class="form-check-label" for="Check">I agree to the terms and conditions</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="reset" class="btn btn-primary">Reset</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="foot">&copy;copyright</div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

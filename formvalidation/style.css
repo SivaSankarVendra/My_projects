@@ -1,0 +1,68 @@
+.main{
+    position: relative;
+    height: 100vh;
+    background: rgb(10,10,9);
+background: linear-gradient(0deg, rgba(10,10,9,1) 0%, rgba(22,142,80,1) 42%, rgba(9,8,8,1) 100%);
+}
+.container{
+    margin-top: 10px;
+    padding: 40px !important;
+    border: 0.2px solid black;
+    border-radius: 20px;
+    color: white;
+    max-width: 50% !important;
+    background-color: rgba(255, 255, 255, 0.166);
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+
+.head{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    color: white;
+    padding: 5px !important;
+    border: 0.2px solid black;
+    background-color: rgba(121, 92, 92, 0.363);
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);;
+    font-family: 'Playfair Display', serif;
+    font-size: xx-large;
+}
+.foot{
+    text-decoration: underline;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 5vh;
+    color: white;
+    padding: 5px !important;
+    border: 0.2px solid black;
+    background-color: rgba(114, 100, 128, 0.232);
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);;
+    font-family: 'Roboto Slab', serif;
+}
+.errornote {
+    margin-left: 30px ;
+    color: red;
+    font-size: medium;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: fit-content;
+        font-size: small;
+        padding: 20px !important;
+    }
+    button{
+        font-size: small !important;
+    }
+    .errornote {
+        margin-left: 10px;
+        font-size: small;
+    }
+}
